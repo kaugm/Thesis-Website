@@ -1,14 +1,22 @@
 <!--
 Sources:
+html template:
 https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_parallax&stacked=h
+random sort js function:
 https://stackoverflow.com/questions/18038671/how-can-i-create-a-button-that-links-to-multiple-websites-randomly
+title image:
 https://brand.virginia.edu/files/uva-primary-logos
+bg image:
+https://i0.wp.com/fundraisingreportcard.com/wp-content/uploads/2017/04/uva.jpg?fit=4752%2C3006&ssl=1
+button:
+https://github.com/IanLunn/Hover
 -->
 
 <!DOCTYPE html>
 <html>
 <title>M.S. Global Commerce | Thesis</title>
 <link rel="shortcut icon" type="image/x-icon" href="title.png" />
+<link rel = "stylesheet" type = "text/css" href = "myStyle.css" />
 
 <!-- js script to randomly sort users between the 2 urls/surveys -->
 <script type="text/javascript">
@@ -72,6 +80,8 @@ body, html {
     min-height: 400px;
   }
 }
+
+
 </style>
 <body>
 
@@ -91,14 +101,16 @@ body, html {
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">UVA <span class="w3-hide-small">THESIS</span> SURVEY</span>
   </div>
 </div>
+<br>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-32" id="about">
-  <h3 class="w3-center"><button class="small button" onclick="randomsort()">Take Survey!</button></h3>
+  <h3 class="w3-center"><button class="hvr-fade" onclick="randomsort()"><span class="w3-center w3-padding-large w3-xlarge">Take Survey!</span></button></h3>
 <br><br>
   <p>Upon clicking the link, you will redirected to a survey and prompted to enter the survey code. This survey code can be found in the email sent to valid respondents.</p>
   <p>Please ensure javascript is enabled in your browser (enabled by default). Javascript is required to randomly sort respondents upon clicking the button and to redirect them to the proper survey. Verified working in Chrome v73.0, Firefox v65.0.2, and Internet Explorer v11.59.</p>
 <br><br>
+
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off">
