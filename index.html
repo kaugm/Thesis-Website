@@ -84,13 +84,14 @@ body, html {
   .hidden-desktop {
     display: none !important;
   }
+  .desktop-hidden-break { display: none; }
 }
 
 @media all and (max-width: 767px) {
   .hidden-mobile {
     display: none !important;
   }
-  .mobile-break { display: none; }
+  .mobile-hidden-break { display: none; }
 }
 
 
@@ -111,7 +112,7 @@ body, html {
   <div class="w3-display-middle" style="white-space:nowrap;">
 
       <!-- Title for Desktops -->
-      <br class="mobile-break"><br class="mobile-break"><br class="mobile-break"><br class="mobile-break"><br class="mobile-break"><br class="mobile-break">
+      <br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break">
       <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity hidden-mobile">CEO <span class="w3-hide-small">COMPENSATION</span> SURVEY</span><br><br>
       <center><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity hidden-mobile">RANDOM <span class="w3-hide-small"></span> PLACEMENT</span></center><br><br>
 
@@ -126,7 +127,7 @@ body, html {
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-32" >
   <h2 class="w3-center"><button class="hvr-fade" onclick="randomsort()"><span class="w3-center w3-padding-large w3-xlarge">Take Survey!</span></button></h2>
-<br><br>
+<br><br><br class="desktop-hidden-break">
   <p>Upon clicking the link, you will be randomly placed into a survey group and prompted to enter the survey code. This survey code can be found in the email sent to valid respondents.</p><br>
   <div id="about"><p><center><strong>
       <a href="#about" ><i class="fa fa-arrow-down w3-margin-right"></i>   CONFIDENTIALITY & DATA PRIVACY   <i class="fa fa-arrow-down w3-margin-left"></i></a>
