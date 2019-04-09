@@ -80,10 +80,12 @@ body, html {
   }
 }
 
+/* For hiding and producing different content on Desktop vs Mobile browsers */
 @media all and (min-width: 768px) {
   .hidden-desktop {
     display: none !important;
   }
+  /* br class is only visible on mobile, hidden on desktop */
   .desktop-hidden-break { display: none; }
 }
 
@@ -91,6 +93,7 @@ body, html {
   .hidden-mobile {
     display: none !important;
   }
+  /* br class is only visible on desktop, hidden on mobile */
   .mobile-hidden-break { display: none; }
 }
 
@@ -127,7 +130,7 @@ body, html {
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-32" >
   <h2 class="w3-center"><button class="hvr-fade" onclick="randomsort()"><span class="w3-center w3-padding-large w3-xlarge">Take Survey!</span></button></h2>
-<br><br><br class="desktop-hidden-break">
+  <br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="desktop-hidden-break">
   <p>Upon clicking the link, you will be randomly placed into a survey group and prompted to enter the survey code. This survey code can be found in the email sent to valid respondents.</p><br>
   <div id="about"><p><center><strong>
       <a href="#about" ><i class="fa fa-arrow-down w3-margin-right"></i>   CONFIDENTIALITY & DATA PRIVACY   <i class="fa fa-arrow-down w3-margin-left"></i></a>
