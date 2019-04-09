@@ -66,7 +66,7 @@ body, html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  min-height: 300px;
+  min-height: 275px;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -77,6 +77,18 @@ body, html {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
   }
 }
 
@@ -96,21 +108,23 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CEO <span class="w3-hide-small">COMPENSATION</span> SURVEY</span><br><br>
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity hidden-mobile">CEO <span class="w3-hide-small">COMPENSATION</span> SURVEY</span><br><br>
     <center><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RANDOM <span class="w3-hide-small"></span> PLACEMENT</span></center><br><br>
   </div>
 </div>
 <br>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-32" id="about">
+<div class="w3-content w3-container w3-padding-32" >
   <h2 class="w3-center"><button class="hvr-fade" onclick="randomsort()"><span class="w3-center w3-padding-large w3-xlarge">Take Survey!</span></button></h2>
 <br><br>
   <p>Upon clicking the link, you will be randomly placed into a survey group and prompted to enter the survey code. This survey code can be found in the email sent to valid respondents.</p><br>
-  <p><center><strong>↓   CONFIDENTIALITY & DATA PRIVACY   ↓</strong></center></p>
+  <div id="about"><p><center><strong>
+      <a href="#about" ><i class="fa fa-arrow-down w3-margin-right"></i>   CONFIDENTIALITY & DATA PRIVACY   <i class="fa fa-arrow-down w3-margin-left"></i></a>
+  </strong></center></p></div>
   <p>You survey answers are sent to Qualtrics where data will be stored securely. The survey will NOT collect any identifying information such as name, identification numbers, date of birth, addresses, phone numbers, or IP addresses. The only identifying information collected are email addresses, which is up to the discretion of the respondent to enter. Email addresses may be entered voluntarily to be considered in a lottery for monetary compensation. Email data will be stored securely in password-protected format and the file will not be uploaded to the internet nor stored on a cloud platform such as Google Drive or Dropbox. All analysis will be conducted offline.</p>
   <p>Please ensure javascript is enabled in your browser (enabled by default). Javascript is required to run the sorting function when the button is clicked. Verified working in Chrome v73.0, Firefox v65.0.2, and Mobile Safari v12.</p>
-<br><br>
+<br>
 
 
 <!-- Bottom Image -->
