@@ -98,59 +98,45 @@ body, html {
   .mobile-hidden-break { display: none; }
 }
 
-.roundedcorners {
-  border-radius: 5px; 
-}
-
 
 </style>
-<body class="w3-light-grey">
+<body>
 
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width: 1000;">
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
 
-   <!-- Center Column -->
-   <div>
-      <div class="w3-white w3-text-grey w3-card-4" >
-        <div class="w3-display-container">
+      <!-- Title for Desktops -->
+      <br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break">
+      <center>><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity hidden-mobile">WELCOME <span class="w3-hide-small">TO</span> THE</span></center><br class="mobile-hidden-break">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity hidden-mobile">CEO <span class="w3-hide-small">COMPENSATION</span> SURVEY</span><br><br>
+      <center><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity hidden-mobile">RANDOM <span class="w3-hide-small"></span> PLACEMENT</span></center><br><br>
 
-          <!-- First Parallax Image with Logo Text -->
-          <div class="w3-display-container w3-opacity-min" id="home">
-              <div class="w3-display-topmiddle" style="white-space:nowrap;">
-            
-                  <!-- Title for Desktops -->
-                  <br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break"><br class="mobile-hidden-break">
-
-                  <center>><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity hidden-mobile">WELCOME <span class="w3-hide-small">TO</span> THE</span></center><br class="mobile-hidden-break">
-                  <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity hidden-mobile">CEO <span class="w3-hide-small">COMPENSATION</span> SURVEY</span><br><br>
-                  <center><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity hidden-mobile">RANDOM <span class="w3-hide-small"></span> PLACEMENT</span></center><br><br>
-            
-                  <!-- Title for Mobile -->
-                  <center><span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity hidden-desktop"> CEO COMPENSATION</span></center><br><br>
-                  <center><span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity hidden-desktop"> SURVEY</span></center><br><br>
-                  <center><span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity hidden-desktop"> RANDOM PLACEMENT</span></center><br><br>
-              </div>
-              </div>
-
-          <img src="https://github.com/kaugm/kaugm.github.io/blob/master/email_top.jpg?raw=true" style="width:100%" height="400px" alt="Image cannot be displayed: Rouss Hall at the University of Virginia";>
-
-
-
-
+      <!-- Title for Mobile -->
+      <center><span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity hidden-desktop"> CEO COMPENSATION</span></center><br><br>
+      <center><span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity hidden-desktop"> SURVEY</span></center><br><br>
+      <center><span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity hidden-desktop"> RANDOM PLACEMENT</span></center><br><br>
+  </div>
+</div>
 <br class="mobile-hidden-break">
 
 <!-- Container (About Section) -->
-
-
 <br class="mobile-hidden-break">
 <div class="w3-content w3-container w3-padding-16" >
-
-    <h2 class="w3-center"><button class="hvr-fade" onclick="randomsort()"><span class="w3-center w3-padding-large w3-xlarge">Take Survey!</span></button></h2>
-  <br class="mobile-hidden-break">
-  <p style="font-size: 18px; margin: 25px">Upon clicking the link, you will be randomly placed into a survey group on <strong>Qualtrics</strong> and prompted to enter the survey code. This survey code can be found in the <strong>email</strong> sent to valid respondents.</p>
+  <h2 class="w3-center"><button class="hvr-fade" onclick="randomsort()"><span class="w3-center w3-padding-large w3-xlarge">Take Survey!</span></button></h2>
+  <br class="mobile-hidden-break"><br class="mobile-hidden-break">
+  <p style="font-size: 18px;">Upon clicking the link, you will be randomly placed into a survey group on <strong>Qualtrics</strong> and prompted to enter the survey code. This survey code can be found in the email sent to valid respondents.</p>
   <div id="about">
-    <p style="margin-top: 60px;"><center><strong><a href="#about" ><i class="fa fa-arrow-down w3-margin-right"></i>   SURVEY CONFIDENTIALITY & DATA PRIVACY   <i class="fa fa-arrow-down w3-margin-left"></i></a>
+    <p style="margin-top: 40px;"><center><strong><a href="#about" ><i class="fa fa-arrow-down w3-margin-right"></i>   SURVEY CONFIDENTIALITY & DATA PRIVACY   <i class="fa fa-arrow-down w3-margin-left"></i></a>
   </strong></center></p></div>
 
   <ul style="margin: 25px 0; font-family: 'Avenir Next', 'Avenir', 'Helvetica', sans-serif !important; font-size: 14px; list-style-type:none;">
@@ -208,13 +194,6 @@ body, html {
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> - Page written by Karl Martin</p>
 </footer>
  
-
-    <!-- End Center Column -->
-  </div>
-    
-  <!-- End Page Container -->
-</div>
-
 <script>
 // Modal Image Gallery
 function onClick(element) {
