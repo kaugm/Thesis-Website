@@ -1,5 +1,7 @@
 # kaugm.github.io
 
+
+> This is code for a website used to randomize respondents for my thesis project.
 I do not own the images sourced.
 
 Sources:
