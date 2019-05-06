@@ -19,7 +19,7 @@ Javascript & HTML Code:
     }
 </script>
 <body>
-<h2><button class="w3-button" onclick="randomsort()"><span class="w3-center w3-padding-large w3-xlarge">Take Survey!</span></button></h2>
+<button class="w3-button" onclick="randomsort()">Take Survey!</button>
 </body>
 ~~~~
 <br>
