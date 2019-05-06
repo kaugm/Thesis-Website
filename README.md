@@ -5,7 +5,7 @@ I had 2 qualtrics surveys for my thesis experiment, and needed a way to ensure r
 ### About
 This is a website performs the sorting function. Respondents click on the button on the page and are redirected to one of the 2 surveys we had. This way, only one link is sent to resondents and random sorting is ensured.  
 <br>
-Javascript code:
+Javascript & HTML Code:
 ~~~~
 <script>
     var urls = [
@@ -18,11 +18,10 @@ Javascript code:
         window.location = url; // redirect
     }
 </script>
-~~~~
-<br>
-Added the button to the website:
-~~~~
+<body>
 <h2><button class="w3-button" onclick="randomsort()"><span class="w3-center w3-padding-large w3-xlarge">Take Survey!</span></button></h2>
+</body>
 ~~~~
 <br>
+
 Idea from: <a href="https://stackoverflow.com/questions/18038671/how-can-i-create-a-button-that-links-to-multiple-websites-randomly">Stack Overflow</a>
