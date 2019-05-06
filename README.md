@@ -17,7 +17,8 @@ Javascript code:
         var url = urls[Math.floor(Math.random()*urls.length)];
         window.location = url; // redirect
     }
-</script>~~~~
+</script>
+~~~~
 <br>
 Added the button to the website:
 ~~~~
